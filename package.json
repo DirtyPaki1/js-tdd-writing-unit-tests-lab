@@ -15,8 +15,12 @@
     "jest": "^27.4.5"
   },
   "jest": {
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    }
-  }
+    "moduleDirectories": ["node_modules", "src"],
+    "moduleNameMapper": {
+       "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "moduleFileExtensions": ["js", "json", "jsx", "ts", "tsx", "node"]
+   }
+   
+  
 }

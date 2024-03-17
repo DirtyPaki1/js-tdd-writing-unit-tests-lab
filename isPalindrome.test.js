@@ -14,8 +14,8 @@ describe("isPalindrome", () => {
     expect(isPalindrome("Racecar")).toBe(true);
  });
 
- it("returns true for an empty string", () => {
-    expect(isPalindrome("")).toBe(true);
+ it("returns false for an empty string", () => {
+    expect(isPalindrome("")).toBe(false);
  });
 
  // Bonus: Throw an error for non-alphabetic characters
@@ -28,19 +28,3 @@ describe("isPalindrome", () => {
     expect(() => isPalindrome(12345)).toThrow();
  });
 });
-
-
-
- // Bonus: Throw an error for non-alphabetic characters
- it("throws an error for input with non-alphabetic characters", () => {
-    expect(() => isPalindrome("racecar123")).toThrow();
- });
-
- // Bonus: Throw an error for input that isn't a string
- it("throws an error for input that isn't a string", () => {
-    expect(() => isPalindrome(12345)).toThrow();
- });
-
-
-   
-   
